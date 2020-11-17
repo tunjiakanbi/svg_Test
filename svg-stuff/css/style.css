@@ -1,0 +1,32 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-wrapper {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+.content-wrapper section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrapper section #svg-img {
+  width: auto;
+  height: 100%;
+}
+
+.content-wrapper section #svg-img #whitebkgd, .content-wrapper section #svg-img #blueCirc, .content-wrapper section #svg-img #yellowBase, .content-wrapper section #svg-img #orangeBase, .content-wrapper section #svg-img #blueBase, .content-wrapper section #svg-img #baseGreen, .content-wrapper section #svg-img #yellowBase2, .content-wrapper section #svg-img #yellowCirc, .content-wrapper section #svg-img #heading-text1, .content-wrapper section #svg-img #technology-text, .content-wrapper section #svg-img #smallGreens, .content-wrapper section #svg-img #smallOranges, .content-wrapper section #svg-img #smallWhites, .content-wrapper section #svg-img #miisc {
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
