@@ -1,8 +1,12 @@
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   background-color: green;
 }
 
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
   background-color: green;
 }
 
@@ -45,7 +49,7 @@ div#main-content4 {
   background-color: #d719ae;
 }
 
-section {
+section#main-content1-section {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -54,13 +58,11 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-svg {
+section#main-content1-section svg {
   width: 40%;
   height: 40%;
+  margin-top: 6%;
 }
 /*# sourceMappingURL=style.css.map */

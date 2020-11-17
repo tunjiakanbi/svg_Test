@@ -36,5 +36,39 @@
         //   $('.navbar-collapse').collapse('hide');
         // });
 
+        let waves = $('.waves');
+        let lakeText = $('#laketime-text');
+        console.log(lakeText);
+        const ei = "power4.in";
+        const eo = "power4.out";
+        const bo = "bounce.out";
+        const bi = "bounce.in";
+
+        function showWaves() {
+          let showwaves = gsap.timeline({
+            id: "showwaves"
+          });
+          showwaves.fromTo(lakeText, {
+            autoAlpha: 0
+          }, {
+            autoAlpha: 1,
+            duration: 2,
+            ease: ei
+          }, '-=3');
+
+          showwaves.fromTo(waves, {
+            y: 50,
+            autoAlpha: 0
+          }, {
+            y: 0,
+            autoAlpha: 1,
+            duration: 1,
+            ease: bo
+          });
+        }
+
+        let master = gsap.timeline();
+        master.add(showWaves());
+        GSDevTools.create();
         // document ready ends below
       });
