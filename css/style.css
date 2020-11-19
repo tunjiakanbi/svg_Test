@@ -12,6 +12,7 @@
 
 body {
   position: relative;
+  font-family: Baskerville;
 }
 
 #content-wrapper {
@@ -31,6 +32,29 @@ div.main-content-divs {
 
 nav {
   height: 76px;
+}
+
+nav .navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+nav .nav-item {
+  width: 150px;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 892px) {
+  #navbarSupportedContent {
+    height: 768px;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#hour-mins, #hours > .cls-1, #semi-circ {
+  opacity: 0;
 }
 
 div#main-content1 {

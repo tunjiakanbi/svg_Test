@@ -15,6 +15,7 @@
 // my custom css starts here
 body {
     position: relative;
+    font-family: Baskerville;
 }
 
 #content-wrapper {
@@ -35,8 +36,34 @@ div.main-content-divs {
 
 nav {
     height: 76px;
+    .navbar-brand {
+        text-transform: uppercase;   
+        letter-spacing: 0.1em;  
+    }
+    .navbar-nav {
+        //background-color: #ff0;
+    }
+    .nav-item {
+        width: 150px;
+        background-color:rgba(255, 255,0, 1);
+    }
+    // div#navbarSupportedContent.navbar-collapse.collapsse.show {
+    //     width: 100px;
+    // }
 }
+//fix navbar-collapse
+@media screen and (max-width:892px) {
+    #navbarSupportedContent {
+        height: 768px;
+        background-color: grey;
+        padding: 0;
+        margin: 0;
+    }
 
+}
+#hour-mins, #hours>.cls-1, #semi-circ {
+    opacity: 0;
+}
 div#main-content1 {
     // height: calc(100vh - 76px);
     background-color: rgba(255, 255, 255, 1);
